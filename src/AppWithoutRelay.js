@@ -1,7 +1,7 @@
 import logo from "./logo.png";
 import "./App.css";
-// import { BrightIDRegistration } from "./components/react-brightid-registration/src";
-import { BrightIDRegistration } from "react-brightid-registration";
+import { BrightIDRegistration } from "./components/react-hashmask-registration";
+//import { BrightIDRegistration } from "react-hashmask-registration";
 
 function AppWithoutRelay() {
     return (
@@ -10,17 +10,17 @@ function AppWithoutRelay() {
                 <img
                     className="App-header__image"
                     src={logo}
-                    alt="Song a Day"
+                    alt="The Hashmasks"
+                    width="200px"
                 />
             </header>
             <main>
                 <div className="App-brightid-registration">
                     <BrightIDRegistration
-                        context="snapshot"
-                        contractAddr="0x81591DC4997A76A870c13D383F8491B288E09344"
-                        // contractAddr="0x62b008b2593a175BB33FFFbe8a11a92939B5A67C"
-                        mainnetRpcUrl="https://mainnet.infura.io/v3/60a7b2c16321439a917c9e74a994f7df"
-                        walletConnectInfuraId="60a7b2c16321439a917c9e74a994f7df"
+                        context="hashmasks"
+                        contractAddr=""
+                        mainnetRpcUrl=""
+                        walletConnectInfuraId=""
 
                         // appStoreAndroid="https://play.google.com/store/apps/details?id=org.brightid"
                         // appStoreIos="https://apps.apple.com/us/app/brightid/id1428946820"
@@ -36,17 +36,19 @@ function AppWithoutRelay() {
                         // registrationTokenDecimal="18"
                         // registrationTokenName="Eidi"
                         // verificationUrl="https://app.brightid.org/node/v5/verifications"
+
+                        verificationUrl="https://node.brightid.org/brightid/v6/verifications"
                     />
                 </div>
             </main>
-            <footer className="App-footer">
-                &copy; 2022{" "}
+           <footer className="App-footer">
+                &copy; 2022{" "} 
                 <a
-                    href="https://songaday.world/"
+                    href="https://www.thehashmasks.com/"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    SongADAO LCA
+                    Suum Cuique Labs GmbH
                 </a>
             </footer>
         </div>

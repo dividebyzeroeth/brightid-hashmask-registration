@@ -1,4 +1,4 @@
-# SongADAO IDChain / Snapshot Registration App
+# Hashmasks Registration App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

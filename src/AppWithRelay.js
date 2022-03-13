@@ -1,7 +1,7 @@
 import logo from "./logo.png";
 import "./App.css";
-// import { BrightIDRegistrationViaRelay } from "./components/react-brightid-registration/src";
-import { BrightIDRegistrationViaRelay } from "react-brightid-registration";
+import { BrightIDRegistrationViaRelay } from "./components/react-hashmask-registration";
+//import { BrightIDRegistrationViaRelay } from "react-hashmask-registration";
 
 function AppWithRelay() {
     return (
@@ -10,18 +10,18 @@ function AppWithRelay() {
                 <img
                     className="App-header__image"
                     src={logo}
-                    alt="Song a Day"
+                    alt="The Hashmasks"
+                    width="200px"
                 />
             </header>
             <main>
                 <div className="App-brightid-registration">
                     <BrightIDRegistrationViaRelay
-                        context="snapshot"
-                        contractAddr="0x81591DC4997A76A870c13D383F8491B288E09344"
-                        // contractAddr="0x62b008b2593a175BB33FFFbe8a11a92939B5A67C"
-                        mainnetRpcUrl="https://mainnet.infura.io/v3/60a7b2c16321439a917c9e74a994f7df"
-                        walletConnectInfuraId="60a7b2c16321439a917c9e74a994f7df"
-                        relayVerificationURL="https://idchain.songadao.org/brightid-registration-relay/register"
+                        context="hashmasks"
+                        contractAddr=""
+                        mainnetRpcUrl=""
+                        walletConnectInfuraId=""
+                       
                         // relayVerificationURL="http://localhost:5001/brightid-registration-relay/register"
 
                         // appStoreAndroid="https://play.google.com/store/apps/details?id=org.brightid"
@@ -31,17 +31,19 @@ function AppWithRelay() {
                         // registrationChainId="74"
                         // registrationRpcUrl="https://idchain.one/rpc/"
                         // verificationUrl="https://app.brightid.org/node/v5/verifications"
+
+                        verificationUrl="https://node.brightid.org/brightid/v6/verifications"
                     />
                 </div>
             </main>
             <footer className="App-footer">
-                &copy; 2022{" "}
+                &copy; 2022{" "} 
                 <a
-                    href="https://songaday.world/"
+                    href="https://www.thehashmasks.com/"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    SongADAO LCA
+                    Suum Cuique Labs GmbH
                 </a>
             </footer>
         </div>
